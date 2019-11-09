@@ -8,6 +8,9 @@ class Helpers
   end
 
   def is_logged_in?(session_hash)
+    #should also accept the session hash as an argument. This method should
+    #return true if the user_id is in the session hash and false if not. The
+    #Ruby !! operator will come in handy here.
     !!session_hash[:user_id]
   end
 
